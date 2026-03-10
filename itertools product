@@ -1,0 +1,6 @@
+from itertools import product
+A_input = list(map(int, input().split()))
+B_input = list(map(int, input().split()))
+cartesian_product = list(product(A_input, B_input))
+output = ' '.join(map(str, cartesian_product))
+print(output)
