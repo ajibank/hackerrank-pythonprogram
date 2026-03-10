@@ -1,0 +1,5 @@
+def wrap(string, max_width):
+    wrapped_lines = []
+    for i in range(0, len(string), max_width):
+        wrapped_lines.append(string[i:i + max_width])
+    return '\n'.join(wrapped_lines)
