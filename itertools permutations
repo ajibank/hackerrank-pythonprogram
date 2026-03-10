@@ -1,0 +1,17 @@
+from itertools import permutations
+
+def print_permutations(s, r):
+    sorted_s=sorted(s)
+    perms=permutations(sorted_s, r)
+    for p in perms:
+        print("".join(p))
+if __name__ == "__main__":
+     try:
+        input_line = input()
+        s_input, r_input = input_line.split()
+        r_int = int(r_input)
+        print_permutations(s_input, r_int)
+     except ValueError:
+        print("Invalid input format. Please provide a string and an integer separated by a space.")
+     except EOFError:
+        pass
