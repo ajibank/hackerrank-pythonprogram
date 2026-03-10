@@ -1,0 +1,13 @@
+def print_combinations_sorted(s, k):
+    sorted_s=sorted(s)
+    for length  in range(1,k+1):
+        for combo in itertools.combinations(sorted_s, length):
+            print("".join(combo))
+input_line = input()
+try:
+     s, k_str = input_line.split()
+     k = int(k_str)
+     print_combinations_sorted(s, k)
+except ValueError:
+     print("Invalid input format. Please provide a string and an integer separated by a space.")
+    
