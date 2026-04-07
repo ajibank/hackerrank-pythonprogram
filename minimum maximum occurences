@@ -1,0 +1,15 @@
+a = [3, 5, 7, 2, 8, 1]
+
+mxv = mnv = a[0]
+mxp = mnp = 0
+
+for i, value in enumerate(a):
+    if value > mxv:
+        mxv = value
+        mxp = i
+    if value < mnv:
+        mnv = value
+        mnp = i
+
+print(mxp)
+print(mnp)
