@@ -1,0 +1,6 @@
+repetition = 7
+for i in range(1, 3):
+    # Inner loop to print each number seven times
+    for j in range(repetition):
+        # The end=" " parameter ensures numbers are printed on the same line
+        print(i, end=" ")
