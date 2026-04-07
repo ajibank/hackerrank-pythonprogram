@@ -1,0 +1,15 @@
+def calculate_daily_earnings(patient_ages):
+    total_earnings = 0
+    
+    for age in patient_ages:
+        if age < 17:
+            total_earnings += 200
+        elif 17 <= age <= 40:
+            total_earnings += 400
+        else: # age > 40
+            total_earnings += 300
+            
+    return total_earnings
+ages = [10, 25, 50, 17, 40, 15]
+earnings = calculate_daily_earnings(ages)
+print(f"Total earnings for the day: {earnings} INR")
