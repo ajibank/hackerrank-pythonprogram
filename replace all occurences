@@ -1,0 +1,9 @@
+def replace_words(sentence, lookup):
+  
+    for word, replacement in lookup.items():
+        sentence = sentence.replace(word, replacement)
+    return sentence
+input_sentence = "I went to the store and bought a new car."
+lookup_dict = {"store": "shop", "car": "bike"}
+output_sentence = replace_words(input_sentence, lookup_dict)
+print(output_sentence)
