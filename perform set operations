@@ -1,0 +1,25 @@
+def get_union(list1,list2):
+    result=list(list1)
+    for item in list2:
+        if item not in result:
+            result.append(item)
+    return result
+def get_intersection(list1,list2):
+    result=[]
+    for item in list1:
+        if item in list2:
+            result.append(item)
+     return result
+def get_difference(list1, list2):
+    result = []
+    for item in list1:
+        if item not in list2:
+            result.append(item)
+    return result
+set_a = [1, 2, 3, 4, 5]
+set_b = [4, 5, 6, 7, 8]
+print(f"Set A: {set_a}")
+print(f"Set B: {set_b}")
+print(f"Union: {get_union(set_a, set_b)}")
+print(f"Intersection: {get_intersection(set_a, set_b)}")
+print(f"Difference (A - B): {get_difference(set_a, set_b)}")
