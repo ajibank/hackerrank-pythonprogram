@@ -1,0 +1,49 @@
+def menu_program():
+  my_list=[]
+  while True:
+      print("\n--- List Operations Menu ---")
+        print("1. Add element at specified position")
+        print("2. Add element at the last")
+        print("3. Compare two lists")
+        print("4. Print id of all elements")
+        print("5. Find first, last, and total occurrences of an item")
+        print("6. Exit")
+        choice=input("enter your choice:")
+        if choice=='1':
+            item=input("enter the element to add:")
+            pos=int(input("enter the position(0 to{ len(my_list)}):"))
+            my_list.insert(pos,item)
+            print("updated list:",my_list)
+        elif choice=='2':
+            item=input("enter the element to add at the end:")
+            my_list.append(item)
+            print("updated list:",my_list)
+        elif choice=='3':
+            other=input("enter the element for second list(space-seperated):").split()
+            if my_list==other
+                print("result: Both the lists are same:")
+            else:
+                print("result:Both the lists are different:")
+        elif choice=='4':
+            print("Memory ID of elements:")
+            for i,val in enumerate(my_list):
+                  print(f"Index {i} (Value: {val}): {id(val)}")
+        elif choice=='5':
+            item=input('enter item to be search:")
+            total_count=my_list.count(item)
+            if total_count>0:
+                first_idx= my_list.index(item)
+                last_idx=(my_list)-1-my_list[::-1].index(item)
+                 print(f"Item '{item}' found {total_count} times.")
+                print(f"First occurrence at index: {first_idx}")
+                print(f"Last occurrence at index: {last_idx}")
+            else:
+                print(f"Item '{item}' not found in the list.")
+                
+        elif choice == '6':
+            print("Exiting program.")
+            break
+        else:
+            print("Invalid choice, please try again.")
+
+if __name__ == "__main__":
