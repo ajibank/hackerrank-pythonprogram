@@ -1,0 +1,6 @@
+data={'banana':3,'apple':5,'cherry':2,'date':4}
+asc_data=dict(sorted(data.items()))
+desc_data=dict(sorted(data.items(),reverse=true))
+print("original:",{data})
+print("ascending:",{asc_data})
+print("descending:",{desc_data})
