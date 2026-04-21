@@ -1,0 +1,3 @@
+data=[(3,'apple'),(1,'banana'),(2,'cherry')]
+data.sort(key=lamda x:x[0])
+print("In-placed sorted",data)
