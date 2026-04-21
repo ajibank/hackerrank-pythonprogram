@@ -1,3 +1,5 @@
-data=[(3,'apple'),(1,'banana'),(2,'cherry')]
-data.sort(key=lamda x:x[0])
-print("In-placed sorted",data)
+input_list=[(2,5),(1,2),(4,4),(2,3),(1,2)]
+sorted_list=sorted(input_list)
+explicit_list= sorted(input_list, key=lambda x: (x[0], x[1]))
+print("original list:",input_list)
+print("Sorted List (Increasing Order):", sorted_list)
