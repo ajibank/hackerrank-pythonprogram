@@ -1,0 +1,16 @@
+def remove_duplicates(input_tuple):
+    unique_list = []
+    for item in input_tuple:
+        is_duplicate = False
+        for existing_item in unique_list:
+            if item == existing_item:
+                is_duplicate = True
+                break
+        if not is_duplicate:
+            unique_list.append(item)
+    return tuple(unique_list)
+original_tuple = (1, 2, 3, 2, 4, 1, 5, 3)
+result = remove_duplicates(original_tuple)
+
+print(f"Original Tuple: {original_tuple}")
+print(f"Tuple without duplicates: {result}")
